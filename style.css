@@ -1,0 +1,55 @@
+#colorFondo{
+    background: #e0d2e0;
+}
+.fondoLogo{
+    width: 20%;
+    height: 500px;
+}
+.nav-container{
+    background: #543f5e;
+    color: #e9c6e9;
+    width: 100%;
+    height: 50px;
+    text-align: -webkit-right;
+    font-size: 50px;   
+}
+#fondo{
+    width: 100%;
+    
+}
+.name{
+    text-align: center;
+    color: #712F54;
+}
+
+.cards-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+}
+.cards {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(63, 60, 60);
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    color: rgb(200, 157, 218);
+    background-color: rgb(82, 22, 94);
+    box-shadow: rgba(135, 108, 143, 0.781) 5px 5px;
+}
+.cards:nth-child(odd) {
+    background-color: rgb(141, 71, 129);
+}
+
+footer {
+    font-size: 12px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #543f5e;
+    text-align: center;
+}
