@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  
   background-color: #4d2639;
 }
 
@@ -17,9 +17,11 @@ header {
 }
 
 footer{
-  text-align: center;
   
+  text-align: center;
+  color: #ecc8d3;
   margin: 1%;
+  
 }
 
 .header .main {
@@ -487,3 +489,121 @@ header .wave {
 }
 
 
+
+/* lista */
+
+div.body{
+  width: 108rem;
+  min-height: 50px;
+  background: rgba(128, 128, 128, 0.072);
+  
+}
+
+div.subapartado{
+  width: 108rem;
+  min-height: 60px;
+  background: rgb(212, 208, 208);
+}
+
+div.titulo{
+  display: flex;
+  width: 108rem;
+  height: 60px;
+  background: rgb(238, 236, 236);
+  font-size: 3em;
+  justify-content: space-around;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+
+div.cont-btns{
+  display: flex;
+  margin-right: 28%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+  
+button.cart-btn{
+  position: relative;
+  background: orangered;
+  border: 1px solid orangered;
+  width: 4em;
+  left: 35%;
+  height: 3em;
+  border-radius: 5px;
+  color: white;
+}
+button.list-btn{
+  background: white;
+  border: 1px solid orangered;
+  color: orangered;
+  position: relative;
+  left: 40%;
+  border-radius: 5px;
+}
+
+div.info-list{
+  margin-left: 10%;
+  display: flex;
+  width: 90rem;
+  height: 0px;
+  background: rgba(187, 184, 184, 0.11);
+  overflow: hidden;
+  
+}
+
+div.compra-listas-p{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6%;
+ 
+}
+.compra-listas-p button{
+  color: white;
+  background: orangered;
+  border: 1px solid orangered;
+  border-radius: 5%;
+  width: 100px;
+  height: 30px;  
+  position: relative;
+  bottom: 25%; 
+  
+}
+
+.compra-listas-p h6{
+  font-size: 20px;  
+  position: relative;
+  bottom: 20%;
+  
+}
+
+.compra-listas-p h5{
+  position: relative;
+  font-size: 20px; 
+  top: 10%;
+  
+}
+
+.info-cont-product{
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  align-items: center;
+  border: 1px solid gray;
+  width: 180px;
+  height: 170px;
+  
+}
+
+
+div.subapartado:hover div.info-list{
+  height: 200px;
+}

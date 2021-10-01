@@ -65,32 +65,32 @@
     </header>
 
     <section class="products-section">
-      <form action="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWTCdBKL-vlN7UN-mBJxUF8Z2XzeXmiTF5OjLEj1e1XvIpHaQpV8VTxunVlYeIgc9glVhnafOZ1Vjt/pub?gid=0&single=true&output=pdf" method="POST">
+      <form action="https://drive.google.com/drive/folders/1rf5s7HJjZo1vmfDSyPIK5bj9hd8y1PmB?usp=sharing" method="POST">
         <ul>
           <li>
             <label for="name">Nombre de Videojuego</label>
             <br>
-            <input type="text" id="name" name="user_name">
+            <input type="text" id="name" name="user_name" required>
           </li>
           <li>
             <label for="name">Nick de Videojuego </label>
             <br>
-            <input type="text" id="name" name="user_nick">
+            <input type="text" id="name" name="user_nick" required>
           </li>
           <li>
             <label for="name">Rango de Juego </label>
             <br>
-            <input type="text" id="name" name="user_nick">
+            <input type="text" id="name" name="user_nick" required>
           </li>
           <li>
             <label for="mail">Correo electrónico</label>
             <br>
-            <input type="email" id="mail" name="user_mail">
+            <input type="email" id="mail" name="user_mail" required>
           </li>
           <li>
             <label for="name">¿Que buscas?</label>
             <br>
-            <select name="grupo" id="group"> 
+            <select name="grupo" id="group" required> 
               <option value="duo">DUO</option>
               <option value="scuad">TEAM NATURAL</option>
               <option value="profesional"> TEAM PROFESIONAL</option>
@@ -99,7 +99,7 @@
           <li>
             <label for="msg">Mensaje de Busqueda</label>
             <br>
-            <textarea id="msg" name="user_message"></textarea>
+            <textarea id="msg" name="user_message" required></textarea>
           </li>
 
           <input type="submit" value="Enviar">
