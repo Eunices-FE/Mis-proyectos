@@ -376,3 +376,99 @@ header .wave {
       width: 100%;
       padding-top: 7%;
        }
+
+       #ff{
+        background-color: #86364ed3;
+        color: #fff;
+        border: 0;
+        border-radius:10px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: "Fira Sans";
+        max-width: 160px;
+        height: 3em;
+        width: 100%;
+        padding-top: 7%;
+         }
+
+
+         .container-info  .main-info-jugadores h1 {
+          text-align: center;
+          font-size: 2em;
+          font-family: "Permanent Marker", cursive;
+          animation: left-move 1s ease-in;
+        }
+        
+        .container-info .main-info-jugadores h2 {
+          font-size: 1em;
+          font-family: "Permanent Marker", cursive;
+          font-weight: 100;
+          animation: right-move 1s ease-in;
+          text-align: center;
+        }
+        .container-info  .main-info-torneo h1 {
+          text-align: center;
+          font-size: 2em;
+          font-family: "Permanent Marker", cursive;
+          animation: left-move 1s ease-in;
+        }
+        
+        .container-info .main-info-torneo h2 {
+          font-size: 1em;
+          font-family: "Permanent Marker", cursive;
+          font-weight: 100;
+          animation: right-move 1s ease-in;
+          text-align: center;
+          padding-right: 2%;
+        }
+        .container-info  .main-info-form h1 {
+          text-align: center;
+          font-size: 2em;
+          font-family: "Permanent Marker", cursive;
+          animation: left-move 1s ease-in;
+        }
+        
+        .container-info .main-info-form h2 {
+          font-size: 1em;
+          font-family: "Permanent Marker", cursive;
+          font-weight: 100;
+          animation: right-move 1s ease-in;
+          text-align: center;
+          padding-right: 2%;
+        }
+        .products-section form{
+          
+          text-align: center;
+          color: #4d2639;
+          font-size: 1.8em;
+          font-weight: 200;
+          font-family: fantasy;
+          border-radius: 5px;
+        }
+
+        .products-section form input{
+          background: #ecc8d3;
+          border: 1px solid #ecc8d3;
+          border-radius: 5px;
+          width: 500px;
+          height: 30px;
+        }
+        .products-section form textarea{
+          background: #ecc8d3;
+          border: 1px solid #ecc8d3;
+          border-radius: 5px;
+          width: 500px;
+          height: 200px;
+        }
+        .products-section form button {
+          background: #4d2639;
+          border: 1px solid #4d2639;
+          color: #ecc8d3;
+          font-size:.9em;
+          font-family: fantasy;
+          border-radius: 5px;
+          width: 300px;
+          height: 35px;
+        }
+          

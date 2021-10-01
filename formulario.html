@@ -30,13 +30,13 @@
         </nav>
 
         <div class="container-info">
-          <div class="main-info">
-            <h1>Videojuegos y amistad</h1>
-            <h2>Una nueva forma de compartir la vida</h2>
-            <button class="btn">Comenzar la busqueda</button>
+          <div class="main-info-form">
+            <h1>Formulario</h1>
+            <h2>¿Buscas un amigo de juegos? <br> Envia tus datos para ser ingresado en nuestros archivos de Jugadores</h2>
+            
           </div>
           <div class="img-content">
-            <img src="img/img-principal.png" alt="" />
+            <img src="img/form.png" alt="" />
           </div>
 
           <div class="social-content">
@@ -65,7 +65,36 @@
     </header>
 
     <section class="products-section">
-      
+      <form action="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWTCdBKL-vlN7UN-mBJxUF8Z2XzeXmiTF5OjLEj1e1XvIpHaQpV8VTxunVlYeIgc9glVhnafOZ1Vjt/pub?gid=0&single=true&output=pdf" method="POST">
+        <ul>
+          <li>
+            <label for="name">Nombre de Videojuego</label>
+            <br>
+            <input type="text" id="name" name="user_name">
+          </li>
+          <li>
+            <label for="name">Nick de Videojuego </label>
+            <br>
+            <input type="text" id="name" name="user_nick">
+          </li>
+          <li>
+            <label for="name">Rango de Juego </label>
+            <br>
+            <input type="text" id="name" name="user_nick">
+          </li>
+          <li>
+            <label for="mail">Correo electrónico</label>
+            <br>
+            <input type="email" id="mail" name="user_mail">
+          </li>
+          <li>
+            <label for="msg">Mensaje de Busqueda</label>
+            <br>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <button type="submit">Enviar</button>
+         
+      </form>
     </section>
 
     <section class="how-to-chose">
