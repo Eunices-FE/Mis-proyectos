@@ -495,27 +495,45 @@ header .wave {
 div.body{
   width: 108rem;
   min-height: 50px;
-  background: rgba(128, 128, 128, 0.072);
+  
   
 }
 
 div.subapartado{
-  width: 108rem;
+  width: 89rem;
   min-height: 60px;
-  background: rgb(212, 208, 208);
+  background: #f2d9e0;
+  
+  
 }
 
 div.titulo{
   display: flex;
-  width: 108rem;
+  width: 89rem;
   height: 60px;
-  background: rgb(238, 236, 236);
+  background: #ecc8d3c1;
   font-size: 3em;
-  justify-content: space-around;
+  border: 1px dashed #4d2639;
   font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 1%;
+  cursor: pointer;
+
   
 }
+p.title-game{
+  margin-bottom: 33%;
+  font-size: 30px;
+  color: #76455d;
+}
 
+
+p.vj{
+  margin-left: 10%;
+}
+p.listName{
+  margin-left: 2%;
+  color: #4d2639;
+}
 
 div.cont-btns{
   display: flex;
@@ -527,33 +545,40 @@ div.cont-btns{
   align-items: stretch;
 }
   
-button.cart-btn{
-  position: relative;
-  background: orangered;
-  border: 1px solid orangered;
-  width: 4em;
-  left: 35%;
-  height: 3em;
-  border-radius: 5px;
-  color: white;
-}
-button.list-btn{
-  background: white;
-  border: 1px solid orangered;
-  color: orangered;
-  position: relative;
-  left: 40%;
-  border-radius: 5px;
+ul.list-coment{
+  margin-left: 20%;
+  list-style:georgian;
+  color: #76455d;
+  width: 500px;
+  
 }
 
+
 div.info-list{
-  margin-left: 10%;
   display: flex;
   width: 90rem;
   height: 0px;
-  background: rgba(187, 184, 184, 0.11);
   overflow: hidden;
+  margin-left: 3%;
+  font-size: 1.3em;
+}
+ul.list-jugador{
+  margin-left: 20%;
+  list-style:georgian;
+  color: #76455d;
   
+}
+
+p.title-coment {
+  margin-bottom: 3%;
+  font-size: 30px;
+}
+
+
+ul.list-one{
+  margin-left: 5%;
+  list-style:georgian;
+  color: #76455d;
 }
 
 div.compra-listas-p{
@@ -597,7 +622,7 @@ div.compra-listas-p{
   flex-direction: column;
   margin: 1%;
   align-items: center;
-  border: 1px solid gray;
+  
   width: 180px;
   height: 170px;
   
@@ -607,3 +632,161 @@ div.compra-listas-p{
 div.subapartado:hover div.info-list{
   height: 200px;
 }
+
+.torneos {
+  background: white;
+  padding-left: 18%;
+}
+
+/*formulario*/
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+
+.formulario__label{
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.formulario__grupo-input{
+  position: relative;
+}
+
+.formulario__input{
+  width: 100%;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 18px;
+  transition: .3s ease all;
+}
+
+.formulario__input:focus{
+  border: 3px solid #0075ff;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario__input-error{
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario__input-error-activo{
+  display: block;
+}
+
+.formulario__validacion-estado{
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.formulario__checkbox{
+  margin-right: 10px;
+
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar{
+  grid-column: span 2;
+}
+
+.formulario__mensaje{
+  height: 45px;
+  line-height: 45px;
+  background: #f66868;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+.formulario__mensaje-activo{
+  display: block;
+}
+
+.formulario__mensaje p{
+  margin: 0;
+}
+
+.formulario__grupo-btn-enviar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.formulario__btn{
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  font-weight: bold;
+  border: none;
+  background: #4d2639;
+  color: #ecc8d3c1;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .1s ease all;
+}
+.formulario__btn:hover{
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.formulario__mensaje-exito {
+  font-size: 14px;
+  color: #4d2639;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo{
+  display: block;
+}
+.formulario__grupo-correcto 
+.formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label {
+  color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+  color: #bb2929;
+  opacity: 1;
+
+}
+.formulario__grupo-incorrecto .formulario__input{
+  border: 3px solid #bb2929;
+}
+
+@media screen and (max-width: 800px){
+  .formulario{
+    grid-template-columns: 1fr;
+  }
+  .formulario__grupo-terminos, 
+  .formulario__mensaje,
+  .formulario__grupo-btn-enviar{
+    grid-column: 1;
+  }
+
+  .formulario__btn{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
